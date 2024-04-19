@@ -227,6 +227,10 @@ header{
     align-items: center;
 }
 
+#containerForms img {
+    margin-right: 50px;
+}
+
 #formulario{
     width: 596px;
 }
@@ -274,7 +278,7 @@ header{
 }
 
 footer{
-    background-color: white;
+    background-color: #98d8a5;
     display: flex;
     justify-content: space-between;
     align-items: center;
