@@ -1,3 +1,10 @@
+*{
+    font-family: "Roboto";
+}
+
+h1, h2{
+    font-weight: bold;
+}
 body{
     margin: 0;
     padding: 0px;
@@ -15,11 +22,16 @@ nav{
     height: 110px;
 }
 
+nav img{
+    margin-left: 50px;
+}
+
 #divNav a{
     margin: 0px 20px 0px 20px;
     text-decoration: none;
     color: #1C682B;
     font-size: 21px;
+    margin-right: 50px;
 }
 
 header{
@@ -62,6 +74,13 @@ header{
     border-radius: 40px;
     background-color: #1C682B;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1 img, .button2 img{
+    margin-right: 10px;
 }
 
 .button2{
@@ -74,6 +93,9 @@ header{
     background-color: #FFFFFF;
     border: none;
     margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #who{
@@ -149,7 +171,7 @@ header{
 
 #oqDizem{
     width: 100%;
-    height: 720px;
+    height: 850px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -159,18 +181,20 @@ header{
 
 #containerOqDizem{
     text-align: center;
-    width: 100%
+    width: 100%;
+    margin-top: -80px;
+    
 }
 
 #containerOqDizem p{
-    text-align: center;
-    font-size: 21px;
+    margin-left: 20px;
+    font-size: 18px;
 }
 
 #containerOqDizem h1{
     font-size: 51px;
     color: #1C682B;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
 }
 
 #containerCards{
@@ -179,10 +203,12 @@ header{
     align-items: center;
     width: 100%;
     height: auto;
+    margin-top: 70px;
 }
 .cards{
+    text-align: left;
     width: 388px;
-    height: 558px;
+    height: 588px;
     border: solid 1px #84DA95;
     border-radius: 24px;
     margin-left: 50px;
@@ -198,7 +224,7 @@ header{
 
 #contact{
     width: 100%;
-    height: 750px;
+    height: 900px;
     background-color: white;
     display: flex;
     align-items: center;
@@ -206,6 +232,7 @@ header{
 }
 
 #containerContact{
+    margin-top: -100px;
     text-align: center;
 }
 
@@ -225,6 +252,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 100px;
 }
 
 #containerForms img {
@@ -237,6 +265,7 @@ header{
 
 .itensForm{
     margin-right: 100px;
+    text-align: left;
 }
 
 .linhaForms{
@@ -250,14 +279,16 @@ header{
 #formulario label{
     font-size: 18px;
     color: #1C682B;
+    margin-left: 20px;
 }
 
 #formulario input{
     border: solid 1px #1C682B;
     border-radius: 40px;
-    height: 30px;
+    height: 60px;
     width: 200px;
     padding: 5px;
+    font-weight: bold;
 }
 
 #areaTexto{
