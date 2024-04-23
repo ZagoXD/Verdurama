@@ -229,6 +229,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 #containerContact{
@@ -309,7 +310,7 @@ header{
 }
 
 footer{
-    background-color: #98d8a5;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
