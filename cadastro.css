@@ -1,0 +1,79 @@
+body {
+    background-color: #fff;
+    background-image: url('src/Back.jpg') ;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: 97vh;
+}
+
+.container {
+    width: 25%;
+    height: 80%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.container h2{
+    top: 20px;
+    text-align: center;
+    color: #006A42;
+    font-family: "Nunito";
+}
+
+.container h5{
+    text-align: center;
+    font-family: "Nunito";
+}
+
+.container select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 18px;
+
+}
+
+
+.container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.container input:hover {
+    border-color: #006A42;
+}
+.container input:focus {
+    outline-color: #006A42;
+}
+.container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #006A42;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container input[type="submit"]:hover {
+    outline: 1px solid #006A42;
+}
+.container input[type="submit"]:active {
+    background-color: #75EB0D;
+    color: #006A42;
+}

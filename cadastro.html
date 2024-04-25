@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Cadastro - Verdurama</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Faça parte dessa história!</h2>
+        <h5>Cadastre-se para virar um membro do Verdurama</h5>
+
+        <form>
+            <input type="text" id="nome" name="nome" required placeholder="Nome"><br>
+            <input type="text" id="celular" name="celular" placeholder="Celular" required><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
+            <input type="password" id="senha" name="senha" required placeholder="Senha"><br>
+            <input type="password" id="senha" name="senha" required placeholder="Confirmar senha"><br>
+            <br>
+            <label for="funcao">Como deseja usar o Verdurama?</label><br>
+            <select id="funcao">
+                <option value="consumidor">Consumidor</option>
+                <option value="produtor">Produtor</option>
+            </select>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
