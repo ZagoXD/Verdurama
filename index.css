@@ -2,6 +2,14 @@
     font-family: "Roboto";
 }
 
+a:hover{
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
 h1, h2{
     font-weight: bold;
 }
