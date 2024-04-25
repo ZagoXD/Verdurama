@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Verdurama</title>
 </head>
@@ -13,9 +14,10 @@
     <nav>
         <img src="src/logo.png" alt="Logo Barra Navegação">
         <div id="divNav">
-            <a href="#cabecalho">Home</a>
-            <a href="#who">Sobre</a>
-            <a href="#oqDizem">Clientes</a>
+            <a class="itemNav" data-alvo="cabecalho">Home</a>
+            <a class="itemNav" data-alvo="who">Sobre</a>
+            <a class="itemNav" data-alvo="oqDizem">Clientes</a>
+            <a href="">Cadastro</a>
         </div>
     </nav>
     <header id="cabecalho">
@@ -89,4 +91,14 @@
         <p>Copyright © 2024 Verdurama | All Rights Reserved </p>
     </footer>
 </body>
+<script>
+    // Script para rolar pagina
+    $(".itemNav").click(function(event) {
+        event.preventDefault(); 
+        var target = $(this).data("alvo");
+        $('html, body').animate({
+            scrollTop: $("#" + target).offset().top
+        }, 800);
+    });
+</script>
 </html>
