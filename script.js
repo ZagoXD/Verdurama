@@ -21,11 +21,43 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
     var celularInput = document.getElementById("celular");
     var numeroCelular = celularInput.value.replace(/\D/g, '');
 
-    if (numeroCelular.length === 11) {
-        showModal();
-    } else {
-        var celularError = document.getElementById("celularError");
+    var senhaInput = document.getElementById("senha");
+    var confirmarSenhaInput = document.getElementById("confirmarSenha");
+
+    var celularError = document.getElementById("celularError");
+    var confirmarSenhaError = document.getElementById("confirmarSenhaError");
+
+    // Limpar mensagens de erro anteriores :)
+    celularError.textContent = "";
+    confirmarSenhaError.textContent = "";
+
+    // Verificar se os números de celular e senhas são válidos
+    if (numeroCelular.length !== 11) {
         celularError.textContent = "Por favor, insira um número de celular válido.";
+    } 
+    if (senhaInput.value !== confirmarSenhaInput.value) {
+        confirmarSenhaError.textContent = "As senhas não coincidem.";
+    } 
+    if (numeroCelular.length === 11 && senhaInput.value === confirmarSenhaInput.value) {
+        showModal();
+    } 
+});
+
+// input senha
+var senhaInput = document.getElementById("senha");
+var confirmarSenhaInput = document.getElementById("confirmarSenha");
+var confirmarSenhaError = document.getElementById("confirmarSenhaError");
+
+
+// Limpar erro se senha === confirmar senha
+senhaInput.addEventListener("input", function() {
+    if (senhaInput.value === confirmarSenhaInput.value) {
+        confirmarSenhaError.textContent = "";
+    }
+});
+confirmarSenhaInput.addEventListener("input", function() {
+    if (senhaInput.value === confirmarSenhaInput.value) {
+        confirmarSenhaError.textContent = "";
     }
 });
 
@@ -46,7 +78,10 @@ function formatarNumeroTelefone(input) {
     input.value = numero;
 }
 
-// Evento chamada input
+// Limpar erro celular
 document.getElementById("celular").addEventListener("input", function() {
+    var celularError = document.getElementById("celularError");
+    celularError.textContent = ""; 
+
     formatarNumeroTelefone(this);
 });
