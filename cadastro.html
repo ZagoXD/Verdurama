@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="cadastro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="imagex/png" href="src/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Cadastro - Verdurama</title>
 </head>
@@ -15,12 +16,13 @@
         <h2>Faça parte dessa história!</h2>
         <h5>Cadastre-se para virar um membro do Verdurama</h5>
 
-        <form>
+        <form id="cadastroForm">
             <input type="text" id="nome" name="nome" required placeholder="Nome"><br>
-            <input type="text" id="celular" name="celular" placeholder="Celular" required><br>
+            <input type="text" id="celular" name="celular" placeholder="Celular" required maxlength="15">
+            <span id="celularError" class="error-message"></span><br>
             <input type="email" id="email" name="email" placeholder="Email" required><br>
             <input type="password" id="senha" name="senha" required placeholder="Senha"><br>
-            <input type="password" id="senha" name="senha" required placeholder="Confirmar senha"><br>
+            <input type="password" id="confirmarSenha" name="confirmarSenha" required placeholder="Confirmar senha"><br>
             <br>
             <label for="funcao">Como deseja usar o Verdurama?</label><br>
             <select id="funcao">
@@ -28,8 +30,18 @@
                 <option value="produtor">Produtor</option>
             </select>
             <br>
-            <input type="submit" value="Enviar" formaction="login.html">
+            <input type="submit" value="Enviar">
         </form>
     </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Cadastro realizado com sucesso!!</p>
+            <p>Redirecionando para o Login em <span id="countdown">3</span> segundos...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
