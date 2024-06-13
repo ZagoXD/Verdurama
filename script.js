@@ -85,3 +85,56 @@ document.getElementById("celular").addEventListener("input", function() {
 
     formatarNumeroTelefone(this);
 });
+
+var userList = [];
+var count = 1;
+
+function addUser(name, email) {
+  var newUser = { id: count++, name: name, email: email };
+  userList.push(newUser); 
+  localStorage.setItem('userList', JSON.stringify(userList));
+  renderUserList();
+}
+
+function deleteUser(userId) {
+  var updatedUserList = userList.filter(function (user) {
+    return user.id !== userId; 
+  });
+
+  if (updatedUserList.length < userList.length) { 
+    userList = updatedUserList;
+    localStorage.setItem('userList', JSON.stringify(userList)); 
+    renderUserList();
+  } else {
+    alert('Usuário não encontrado.');
+  }
+}
+
+function getUserList() {
+  var storedList = JSON.parse(localStorage.getItem('userList')); 
+  userList = storedList || [];
+}
+
+function renderUserList() {
+  var userListElement = document.getElementById('userList');
+  userListElement.innerHTML = '';
+
+  userList.forEach(function (user) {
+    var listItem = document.createElement('li');
+    listItem.innerHTML = '<span class="user-name">' + user.name + '</span> Email: ' + user.email + '<button class="deleteButton" onclick="deleteUser(' + user.id + ')">Excluir</button>';
+    userListElement.appendChild(listItem);
+  });
+}
+
+getUserList();
+
+renderUserList();
+
+document.getElementById('userForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+  var nameInput = document.getElementById('nameInput');
+  var emailInput = document.getElementById('emailInput');
+  addUser(nameInput.value, emailInput.value);
+  nameInput.value = '';
+  emailInput.value = '';
+});
