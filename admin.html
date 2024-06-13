@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="imagex/png" href="src/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Administrador - Verdurama</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cadastro de usuário</h2>
+
+        <form id="userForm">
+            <input type="text" for="nameInput" id="nameInput" name="name" required placeholder="Nome"><br>
+            <input type="email" for="emailInput" id="emailInput" name="email" placeholder="Email" required><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <br>
+        <hr>
+        <input type="text" for="searchInput" id="searchInput" name="search" placeholder="Buscar">
+        <button class="deleteButton">Excluir Todos</button> <br>
+
+        <ul id="userList"></ul>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Cadastro realizado com sucesso!!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
