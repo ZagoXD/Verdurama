@@ -138,3 +138,8 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
   nameInput.value = '';
   emailInput.value = '';
 });
+
+function clearFields(){
+  document.getElementById('nameInput').value = '';
+  document.getElementById('emailInput').value = '';
+}
