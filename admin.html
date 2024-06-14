@@ -19,11 +19,12 @@
             <input type="text" for="nameInput" id="nameInput" name="name" required placeholder="Nome"><br>
             <input type="email" for="emailInput" id="emailInput" name="email" placeholder="Email" required><br>
             <input type="submit" value="Enviar">
-            <button class="clearButton" onclick="clearFields()">Limpar</button>
         </form>
+        <div id="divClear"><button class="clearButton" onclick="clearFields()">Limpar</button></div>
         <hr>
         <input type="text" for="searchInput" id="searchInput" name="search" placeholder="Buscar">
-        <button class="deleteButton">Excluir Todos</button> <br>
+        <button id="deleteAllButton" class="deleteButton">Excluir Todos</button> <br>
+
 
         <ul id="userList"></ul>
     </div>
@@ -35,6 +36,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="scriptadmin.js"></script>
 </body>
 </html>
