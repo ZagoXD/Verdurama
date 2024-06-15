@@ -37,7 +37,7 @@ function renderUserList(users) {
 
     usersToRender.forEach(function (user) {
         var listItem = document.createElement('li');
-        listItem.innerHTML = '<div class="itemList"> <span class="user-name">' + user.name + '</span> Email: ' + user.email + ' Data de Cadastro: ' + user.date + '<button class="deleteButton" onclick="deleteUser(' + user.id + ')">Excluir</button></div>';
+        listItem.innerHTML = '<div class="itemList"> <span class="user-name">' + user.name + '</span> <span><span class= "email"> Email: </span>' + user.email + '</span><span><span class = "data-cadastro"> Data de Cadastro: </span>' + user.date + '</span><button class="deleteButton" onclick="deleteUser(' + user.id + ')">Excluir</button></div>';
         userListElement.appendChild(listItem);
     });
 }

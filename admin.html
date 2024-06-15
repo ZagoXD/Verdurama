@@ -13,20 +13,20 @@
 
 <body>
     <div class="container">
-        <h2>Cadastro de usuário</h2>
 
         <form id="userForm">
+            <h2>Cadastro de usuário</h2>
             <input type="text" for="nameInput" id="nameInput" name="name" required placeholder="Nome"><br>
             <input type="email" for="emailInput" id="emailInput" name="email" placeholder="Email" required><br>
             <input type="submit" value="Enviar">
+            <div id="divClear"><button class="clearButton" onclick="clearFields()">Limpar</button></div>
         </form>
-        <div id="divClear"><button class="clearButton" onclick="clearFields()">Limpar</button></div>
-        <hr>
+    </div>
+
+    <div class="containerList">
         <input type="text" for="searchInput" id="searchInput" name="search" placeholder="Buscar">
         <button id="deleteAllButton" class="deleteButton">Excluir Todos</button> <br>
-
-
-        <ul id="userList"></ul>
+        <nav><ul id="userList"></ul></nav>
     </div>
 
     <!-- Modal -->

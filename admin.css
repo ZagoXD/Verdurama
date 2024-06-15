@@ -5,6 +5,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 97vh;
+  flex-direction: row;
 }
 
 #divClear{
@@ -14,12 +15,26 @@ body {
 }
 
 .container {
-  width: 60%;
+  width: 30%;
+  height: 55%;
+  background-color: #fff;
+  position: absolute;
+  top: 34.3%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: auto;
+  
+}
+
+.containerList{
+  width: 59%;
   min-height: 80%;
   background-color: #fff;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 66%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -107,14 +122,34 @@ body {
   color: #006A42;
 }
 
+
+#userList{
+  list-style-type: none;
+  margin-right: 5%;
+}
+
 .itemList{
-  margin-top: 40px;
-  height: 40px;
+  height: 50px;
+  justify-content: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.623);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .user-name{
-  margin-top: 10px;
+  color: #006A42;
+  font-weight: bold;
 }
+
+.email {
+  font-weight: bold;
+}
+
+.data-cadastro{
+  font-weight: bold;
+}
+
 
 .deleteButton {
   float: right;
@@ -163,3 +198,4 @@ body {
   max-width: 400px;
   border-radius: 10px;
 }
+
