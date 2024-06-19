@@ -1,8 +1,8 @@
-#Verdurama
+# Verdurama
 
 Aplicativo web para gerenciar vendas de vegetais online.
 
-##Integrantes
+## Integrantes
 
 - **Giovanni Henrique Munhoz de Lion Siervo** (2144255)
 - **Messias Xavier Magalhães** (2266490)
@@ -27,9 +27,3 @@ O Verdurama é uma plataforma online que permite a gestão e venda de vegetais. 
 - **admin.css, cadastro.css, index.css, login.css**: Arquivos de estilo.
 - **script.js**: Scripts de funcionalidade geral.
 - **scriptadmin.js**: Scripts específicos para a administração.
-
-## Como Executar o Projeto
-
-1. Clone o repositório:
-   ```sh
-   git clone https://github.com/ZagoXD/Verdurama.git
