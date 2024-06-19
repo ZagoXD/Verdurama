@@ -1,8 +1,8 @@
-# Verdurama
+#Verdurama
 
 Aplicativo web para gerenciar vendas de vegetais online.
 
-## Integrantes
+##Integrantes
 
 - **Giovanni Henrique Munhoz de Lion Siervo** (2144255)
 - **Messias Xavier Magalhães** (2266490)
