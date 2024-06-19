@@ -1,4 +1,4 @@
-# Verdurama
+*Verdurama
 
 Aplicativo web para gerenciar vendas de vegetais online.
 
